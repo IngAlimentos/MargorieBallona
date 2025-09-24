@@ -635,14 +635,14 @@ swiper-slide img {
 }
 
 .portafo .row {
-    height: 26.5rem;
-    //border: 3px solid rgb(252, 247, 247);
+    height: 28rem;
+    /border: 3px solid rgb(252, 247, 247);
     width: 100%;
     margin: 0;
 }
 
 .portafo .fi {
-    //border: 2px solid blue;
+    /border: 2px solid blue;
     z-index: 1;
 }
 
@@ -666,8 +666,8 @@ swiper-slide img {
 .portafo .fi .cuadra {
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 11rem;
-    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    grid-auto-rows: 11.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
 }
 
 .portafo .fi .cuadra .fichas {

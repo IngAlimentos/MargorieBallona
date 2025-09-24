@@ -636,7 +636,7 @@ swiper-slide img {
 
 .portafo .row {
     height: 26.5rem;
-    //border: 1px solid black;
+    //border: 3px solid rgb(252, 247, 247);
     width: 100%;
     margin: 0;
 }
@@ -693,7 +693,7 @@ swiper-slide img {
 }
 
 .portafo .fi .cuadra .fichas .flo i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     //border: 1px solid black;
 }
 
@@ -725,7 +725,7 @@ swiper-slide img {
 }
 
 .portafo .fi .cuadra .fichas .dexz p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     color: white;
     position: absolute;
     top: 0;
@@ -1288,7 +1288,7 @@ swiper-slide img {
 }
 
 /* Tablets y phablets */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 450px) and (max-width: 700px) {
     body {
         margin: 0;
         padding: 0;
@@ -1481,6 +1481,11 @@ swiper-slide img {
 
     #hy .title p {}
 
+    .portafo .fi {
+        /border: 2px solid white;
+        height: 30rem;
+    }
+
     .portafo .fi .cuadra {
         display: grid;
         gap: 1rem;
@@ -1581,7 +1586,7 @@ swiper-slide img {
 }
 
 /* Escritorio pequeño / tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 700px) and (max-width: 991px) {
     body {
         margin: 0;
         padding: 0;
@@ -1791,11 +1796,43 @@ swiper-slide img {
         font-size: 0.7rem;
     }
 
+    /**** portafolio ****/
+    .portafo {
+        //border: 2px solid green;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .portafo .fi {
+        height: 65rem;
+        /border: 3px solid rgb(252, 247, 247);
+        width: 100%;
+        margin: 0;
+    }
+
     .portafo .fi .cuadra {
         display: grid;
         gap: 1rem;
-        grid-auto-rows: 8rem;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 2fr));
+    }
+
+    .portafo .fi .cuadra .fichas {
+        /border: 2px solid red;
+    }
+
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: 3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1.3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 1rem;
     }
 
     .portafo .se {
@@ -2101,11 +2138,45 @@ swiper-slide img {
         font-size: 0.7rem;
     }
 
+    .portafo {}
+
+    /**** portafolio ****/
+    .portafo {
+        //border: 2px solid green;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .portafo .fi {
+        height: 60rem;
+        /border: 3px solid rgb(252, 247, 247);
+        width: 100%;
+        margin: 0;
+    }
+
     .portafo .fi .cuadra {
         display: grid;
         gap: 1rem;
-        grid-auto-rows: 8rem;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+    }
+
+    .portafo .fi .cuadra .fichas {
+        /border: 2px solid red;
+    }
+
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: rem;
+    }
+
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1.3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 1rem;
     }
 
     .portafo .se {
@@ -2201,7 +2272,7 @@ swiper-slide img {
 }
 
 /* Escritorio extra grande */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
     body {
         margin: 0;
         padding: 0;
@@ -2659,37 +2730,51 @@ swiper-slide img {
 
     #hy .title p {}
 
+
     .portafo .fi .area {
         font-size: 0.7rem;
         //border: 1px solid blue;
     }
 
+     /**** portafolio ****/
+    .portafo {
+        //border: 2px solid green;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .portafo .fi {
+        height: 60rem;
+        /border: 3px solid rgb(252, 247, 247);
+        width: 100%;
+        margin: 0;
+    }
+
     .portafo .fi .cuadra {
         display: grid;
-        gap: 2rem;
-        grid-auto-rows: 15rem;
-        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-        //border: 1px solid green;
-        padding-left: 7rem;
-
+        gap: 1rem;
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 2fr));
     }
 
     .portafo .fi .cuadra .fichas {
-        border-radius: 30px;
+        /border: 2px solid red;
+    }
 
-
-
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: rem;
     }
 
     .portafo .fi .cuadra .fichas .title {
-        font-size: 1rem;
-        color: #9DC234;
+        font-size: 1.3rem;
     }
 
     .portafo .fi .cuadra .fichas .dexz p {
-        font-size: 0.7rem;
-        color: rgb(255, 255, 255);
+        font-size: 1rem;
     }
+
 
     .portafo .se {
         display: flex;
@@ -2698,22 +2783,28 @@ swiper-slide img {
     }
 
     .portafo .se .mar {
-        //border: 5px solid rgb(245, 205, 5);
+        /border: 5px solid rgb(245, 205, 5);
         width: 30rem;
     }
 
     .portafo .se .mar .col {
-        margin: 0 .3rem;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        /border: 2px solid rgb(5, 193, 245);
     }
 
     .portafo .se .mar .col .iamx {
-        //border: 5px solid mediumspringgreen;
+        /border: 5px solid mediumspringgreen;
         width: 100%;
-        height: 80%;
+        height: 40%;
+    }
+
+    .portafo .se .mar .col .iamx img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .portafo .se .mar .col .leta {
@@ -2722,13 +2813,13 @@ swiper-slide img {
     }
 
     .portafo .se .rect {
-        //border: 1px solid green;
+        /border: 1px solid green;
         width: 30rem;
 
     }
 
-    .portafo .se .rect .col .texto {
-        //font-size: 0.8rem;
+    .portafo .se .rect .col .texto p{
+        font-size: 1.4rem;
     }
 
 
@@ -2865,7 +2956,7 @@ swiper-slide img {
     .portafo {
         display: flex;
         flex-direction: row;
-        height: 40rem;
+        height: 60rem;
     }
 
     #jh {
@@ -2910,11 +3001,1466 @@ swiper-slide img {
 
 }
 
-@media only screen and (min-width: 1600px) {
-    header{
+@media only screen and (min-width: 1450px) and (max-width: 1650px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+        width: 6rem;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.75rem;
+        padding: 0.2rem;
+        margin: 0 2rem;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+
+    .desc {
+        display: flex;
+        flex-direction: row;
+        height: 35rem;
+    }
+
+    .desc .uno {
+        width: 95%;
+        //border: 3px solid green;
+    }
+
+
+    .uno .row {
+        //border: 1px solid red  ;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        /border: 1px solid var(--color-naranja);
+        width: 40rem;
+        margin: 1rem;
+        font-size: 1rem;
+        top: 2rem;
+        padding: 1rem;
+
+    }
+
+    .uno .row .bots {
+        transition: all 0.5s ease-out;
+        transform: translateY(10px);
+    }
+
+    .uno .row .bots:hover {
+        background-color: #f15b2400;
+        color: #F15A24;
+        border: 1px solid #F15A24;
+    }
+
+    .uno .row .text p {
+        width: 100%;
+        font-size: 0.8rem;
+        filter: drop-shadow(2px 2px 5px var(--color-naranja));
+
+    }
+
+    .uno .row .bots {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        width: 5rem;
+        height: 1.2rem;
+        background-color: #F15A24;
+        color: white;
+        border-radius: 3rem;
+        font-size: 0.8rem;
+        text-align: center;
+        top: 13rem;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd {
+        display: block;
+        width: 35rem;
+        height: 25rem;
+        /border: 1px solid magenta;
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .tresd model-viewer {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd model-viewer button {
+        font-size: 0.6rem;
+        border-radius: 2rem;
+        border: 1px solid white;
+        padding: 0 0.5rem;
+    }
+
+    .uno .row .qr {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        //border: 3px solid rgb(0, 255, 238);
+        position: absolute;
+        top: 27rem;
+        left: 1rem;
+        padding: 0;
+    }
+
+    .uno .row .qr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .uno .row .hilo {
+        display: block;
+        width: 30rem;
+        height: 0.1px;
+        border: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 35rem;
+        left: 10rem;
+
+    }
+
+    .uno .row .d {
+        //border: 1px solid red;
+        z-index: 1;
+        padding: 0;
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid rgb(26, 255, 0);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+        width: 10rem !important;
+
+
+
+    }
+
+    /*swiper*/
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem !important;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        width: 7rem !important;
+    }
+
+    swiper-slide p {
+        color: var(--color-naranja);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        filter: drop-shadow(3px 2px 5px rgb(1 1 1 / 8));
+
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    /*****desc****/
+    .desc {
+        height: 40rem;
+    }
+
+    .desc .dos {
+        width: 5%;
+        //border: 3px solid red;
+    }
+
+    .desc .dos .redes ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+
+    }
+
+    .dos .redes ul {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        width: 0rem;
+        padding: 0;
+        bottom: -14rem;
+        margin: 0;
+    }
+
+    .dos .redes ul li {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .dos .redes ul li i:hover {
+        color: #9DC234;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        background-color: none;
+        border: none;
+    }
+
+    .abajo {
+        //border: 1px solid rgb(255, 255, 255) !important;
+        background-color: #ededf1;
+        position: relative;
+        width: 0.1px;
+        height: 20rem;
+        margin: 0;
+        bottom: -3rem;
+    }
+
+    .abajo i {
+        display: none;
+    }
+
+    .abajos {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        height: 4rem;
+        font-size: 1.8rem;
+        color: #F15A24;
+        font-weight: bold;
+        z-index: 5 !important;
+    }
+
+    .abajos i {
+        z-index: 5 !important;
+    }
+
+
+    /**poyecto ***/
+    .proyecto {
+        /border: 2px solid red;
+    }
+
+    .proyecto .priuno {
+        /border: 2px solid blue;
+        height: 100%;
+    }
+
+    .proyecto .priuno .r {
+        /border: 2px solid yellow;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyecto .priuno div {
+        /border: 2px solid orange;
+        z-index: 2;
+    }
+
+    .proyecto .pridos {
+        /border: 2px solid green;
+        z-index: 2;
+    }
+
+    .proyecto .priuno .t {
+        /border: 3px solid purple;
+    }
+
+    .proyecto .priuno .t .tu .img {
+        /border: 5px solid magenta;
+        width: 90%;
+        height: 100%;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        /border: 3px solid black;
+        top: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+
+    .proyecto .priuno .t .td .texts .shor {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: none;
+        font-size: 0.9rem;
+        /border: 2px solid red;
+        width: 100%;
+
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 10%;
+        width: 8rem;
+        height: 1.6rem;
+        font-size: 1rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton a p {
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #F15A24;
+
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #9cc23406;
+        border: 1px solid #9DC234;
+    }
+
+
+
+    .proyecto .pridos .conx .col .c2 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: auto;
+
+    }
+
+    #hy .title p {}
+
+
+    .portafo .fi .area {
+        font-size: 0.7rem;
+        //border: 1px solid blue;
+    }
+
+     /**** portafolio ****/
+    .portafo {
+        //border: 2px solid green;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .portafo .fi {
+        height: 60rem;
+        /border: 3px solid rgb(252, 247, 247);
+        width: 100%;
+        margin: 0;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 2fr));
+    }
+
+    .portafo .fi .cuadra .fichas {
+        /border: 2px solid red;
+    }
+
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: rem;
+    }
+
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1.3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 1rem;
+    }
+
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        /border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /border: 2px solid rgb(5, 193, 245);
+    }
+
+    .portafo .se .mar .col .iamx {
+        /border: 5px solid mediumspringgreen;
+        width: 100%;
+        height: 40%;
+    }
+
+    .portafo .se .mar .col .iamx img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .portafo .se .rect {
+        /border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .portafo .se .rect .col .texto p{
+        font-size: 1.4rem;
+    }
+
+
+    #fts:hover {
+        background-color: #F15A24;
+        color: white;
+
+    }
+
+    #fts:hover p a {
+        color: white !important;
+    }
+
+    .refe {
+        z-index: 2 !important;
+
+    }
+
+    .refe .firts {
+        //border: 1px solid gold !important;
+        display: block;
+    }
+
+    .refe .firts .titz {
+        //border: 1px solid magenta;
+        margin: 0;
+    }
+
+    .refe .firts .iy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        //border: 5px solid rgb(0, 4, 255);
+        z-index: 2;
+        margin: 0;
+        height: 80%;
+    }
+
+    .refe .firts .box {
+        border: 1px solid rgba(108, 240, 7, 0);
+        width: auto;
+        height: 100%;
+    }
+
+    .refe .firts .box .cjx .reco .s p {
+        font-size: 0.8rem;
+    }
+
+    .refe .firts .box .cjx .reco .s {
+        //border: 1px solid blue;
+    }
+
+    .refe .firts .box .cjx .reco .a {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .refe .firts .box .cjx .reco .a p {
+        //border: 1px solid yellow;
+        margin: 0;
+    }
+
+    .refe .firts .box .cjx .reco .b p {
+        font-size: 0.7rem;
+    }
+
+    .refe .firts .box .cjx .reco .e {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax {
+        //  border: 5px solid honeydew;
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .desc {
+        //border: 5px solid red;
+        height: 100%;
+    }
+
+    .refe .secund .contr .barra .lista .men {
+        margin: 0 1rem;
+    }
+
+    .refe .secund .contr .barra .lista .men .ic a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .refe .secund .contr .barra p a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contr .barra p a:hover {
+        color: #9DC234;
+    }
+
+    /***proyecto***/
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+        height: 40rem;
+    }
+
+    .proyecto .priuno {
+        padding: 0 2rem;
+    }
+
+    .proyecto .priuno .r h1 {
+        font-size: 1.7rem;
+    }
+
+    .proyecto .pridos {
+        height: 100%;
+    }
+
+    /***portafo***/
+    .portafo {
+        display: flex;
+        flex-direction: row;
+        height: 60rem;
+    }
+
+    #jh {
+        font-size: 0.7rem;
+    }
+
+    .portafo .fi {
+        height: 100%;
+    }
+
+    .portafo .se {
+        height: 100%;
+    }
+
+    #grande {
+        display: block;
+    }
+
+    /**** footer ***/
+    .refe .secund .contax {
+        //border: 1px solid blue;
+        padding: 0 10rem;
+    }
+
+    .refe .secund .contax div {
+        //border: 1px solid black;
+
+    }
+
+    .refe .secund .contax .conk .f {
+        text-align: center;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+
+    /*****scrooll***/
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
+
+}
+@media only screen and (min-width: 1650px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+        width: 6rem;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.75rem;
+        padding: 0.2rem;
+        margin: 0 2rem;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+
+    .desc {
+        display: flex;
+        flex-direction: row;
+        height: 35rem;
+    }
+
+    .desc .uno {
+        width: 95%;
+        //border: 3px solid green;
+    }
+
+
+    .uno .row {
+        //border: 1px solid red  ;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        /border: 1px solid var(--color-naranja);
+        width: 40rem;
+        margin: 1rem;
+        font-size: 1rem;
+        top: 2rem;
+        padding: 1rem;
+
+    }
+
+    .uno .row .bots {
+        transition: all 0.5s ease-out;
+        transform: translateY(10px);
+    }
+
+    .uno .row .bots:hover {
+        background-color: #f15b2400;
+        color: #F15A24;
+        border: 1px solid #F15A24;
+    }
+
+    .uno .row .text p {
+        width: 100%;
+        font-size: 0.8rem;
+        filter: drop-shadow(2px 2px 5px var(--color-naranja));
+
+    }
+
+    .uno .row .bots {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        width: 5rem;
+        height: 1.2rem;
+        background-color: #F15A24;
+        color: white;
+        border-radius: 3rem;
+        font-size: 0.8rem;
+        text-align: center;
+        top: 13rem;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd {
+        display: block;
+        width: 35rem;
+        height: 25rem;
+        /border: 1px solid magenta;
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .tresd model-viewer {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd model-viewer button {
+        font-size: 0.6rem;
+        border-radius: 2rem;
+        border: 1px solid white;
+        padding: 0 0.5rem;
+    }
+
+    .uno .row .qr {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        //border: 3px solid rgb(0, 255, 238);
+        position: absolute;
+        top: 27rem;
+        left: 1rem;
+        padding: 0;
+    }
+
+    .uno .row .qr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .uno .row .hilo {
+        display: block;
+        width: 30rem;
+        height: 0.1px;
+        border: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 35rem;
+        left: 10rem;
+
+    }
+
+    .uno .row .d {
+        //border: 1px solid red;
+        z-index: 1;
+        padding: 0;
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid rgb(26, 255, 0);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+        width: 10rem !important;
+
+
+
+    }
+
+    /*swiper*/
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem !important;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        width: 7rem !important;
+    }
+
+    swiper-slide p {
+        color: var(--color-naranja);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        filter: drop-shadow(3px 2px 5px rgb(1 1 1 / 8));
+
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    /*****desc****/
+    .desc {
+        height: 40rem;
+    }
+
+    .desc .dos {
+        width: 5%;
+        //border: 3px solid red;
+    }
+
+    .desc .dos .redes ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+
+    }
+
+    .dos .redes ul {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        width: 0rem;
+        padding: 0;
+        bottom: -14rem;
+        margin: 0;
+    }
+
+    .dos .redes ul li {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .dos .redes ul li i:hover {
+        color: #9DC234;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        background-color: none;
+        border: none;
+    }
+
+    .abajo {
+        //border: 1px solid rgb(255, 255, 255) !important;
+        background-color: #ededf1;
+        position: relative;
+        width: 0.1px;
+        height: 20rem;
+        margin: 0;
+        bottom: -3rem;
+    }
+
+    .abajo i {
+        display: none;
+    }
+
+    .abajos {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        height: 4rem;
+        font-size: 1.8rem;
+        color: #F15A24;
+        font-weight: bold;
+        z-index: 5 !important;
+    }
+
+    .abajos i {
+        z-index: 5 !important;
+    }
+
+
+    /**poyecto ***/
+    .proyecto {
+        /border: 2px solid red;
+    }
+
+    .proyecto .priuno {
+        /border: 2px solid blue;
+        height: 100%;
+    }
+
+    .proyecto .priuno .r {
+        /border: 2px solid yellow;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyecto .priuno div {
+        /border: 2px solid orange;
+        z-index: 2;
+    }
+
+    .proyecto .pridos {
+        /border: 2px solid green;
+        z-index: 2;
+    }
+
+    .proyecto .priuno .t {
+        /border: 3px solid purple;
+    }
+
+    .proyecto .priuno .t .tu .img {
+        /border: 5px solid magenta;
+        width: 90%;
+        height: 100%;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        /border: 3px solid black;
+        top: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+
+    .proyecto .priuno .t .td .texts .shor {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: none;
+        font-size: 0.9rem;
+        /border: 2px solid red;
+        width: 100%;
+
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 10%;
+        width: 8rem;
+        height: 1.6rem;
+        font-size: 1rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton a p {
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #F15A24;
+
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #9cc23406;
+        border: 1px solid #9DC234;
+    }
+
+
+
+    .proyecto .pridos .conx .col .c2 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: auto;
+
+    }
+
+    #hy .title p {}
+
+
+    .portafo .fi .area {
+        font-size: 0.7rem;
+        //border: 1px solid blue;
+    }
+
+     /**** portafolio ****/
+    .portafo {
+        //border: 2px solid green;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .portafo .fi {
+        height: 60rem;
+        /border: 3px solid rgb(252, 247, 247);
+        width: 100%;
+        margin: 0;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 2fr));
+    }
+
+    .portafo .fi .cuadra .fichas {
+        /border: 2px solid red;
+    }
+
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: rem;
+    }
+
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1.3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 1rem;
+    }
+
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        /border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /border: 2px solid rgb(5, 193, 245);
+    }
+
+    .portafo .se .mar .col .iamx {
+        /border: 5px solid mediumspringgreen;
+        width: 100%;
+        height: 40%;
+    }
+
+    .portafo .se .mar .col .iamx img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .portafo .se .rect {
+        /border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .portafo .se .rect .col .texto p{
+        font-size: 1.4rem;
+    }
+
+
+    #fts:hover {
+        background-color: #F15A24;
+        color: white;
+
+    }
+
+    #fts:hover p a {
+        color: white !important;
+    }
+
+    .refe {
+        z-index: 2 !important;
+
+    }
+
+    .refe .firts {
+        //border: 1px solid gold !important;
+        display: block;
+    }
+
+    .refe .firts .titz {
+        //border: 1px solid magenta;
+        margin: 0;
+    }
+
+    .refe .firts .iy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        //border: 5px solid rgb(0, 4, 255);
+        z-index: 2;
+        margin: 0;
+        height: 80%;
+    }
+
+    .refe .firts .box {
+        border: 1px solid rgba(108, 240, 7, 0);
+        width: auto;
+        height: 100%;
+    }
+
+    .refe .firts .box .cjx .reco .s p {
+        font-size: 0.8rem;
+    }
+
+    .refe .firts .box .cjx .reco .s {
+        //border: 1px solid blue;
+    }
+
+    .refe .firts .box .cjx .reco .a {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .refe .firts .box .cjx .reco .a p {
+        //border: 1px solid yellow;
+        margin: 0;
+    }
+
+    .refe .firts .box .cjx .reco .b p {
+        font-size: 0.7rem;
+    }
+
+    .refe .firts .box .cjx .reco .e {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax {
+        //  border: 5px solid honeydew;
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .desc {
+        //border: 5px solid red;
+        height: 100%;
+    }
+
+    .refe .secund .contr .barra .lista .men {
+        margin: 0 1rem;
+    }
+
+    .refe .secund .contr .barra .lista .men .ic a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .refe .secund .contr .barra p a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contr .barra p a:hover {
+        color: #9DC234;
+    }
+
+    /***proyecto***/
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+        height: 40rem;
+    }
+
+    .proyecto .priuno {
+        padding: 0 2rem;
+    }
+
+    .proyecto .priuno .r h1 {
+        font-size: 1.7rem;
+    }
+
+    .proyecto .pridos {
+        height: 100%;
+    }
+
+    /***portafo***/
+    .portafo {
+        display: flex;
+        flex-direction: row;
+        height: 60rem;
+    }
+
+    #jh {
+        font-size: 0.7rem;
+    }
+
+    .portafo .fi {
+        height: 100%;
+    }
+
+    .portafo .se {
+        height: 100%;
+    }
+
+    #grande {
+        display: block;
+    }
+
+    /**** footer ***/
+    .refe .secund .contax {
+        //border: 1px solid blue;
+        padding: 0 10rem;
+    }
+
+    .refe .secund .contax div {
+        //border: 1px solid black;
+
+    }
+
+    .refe .secund .contax .conk .f {
+        text-align: center;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+
+    /*****scrooll***/
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    header {
         /border: 2px solid red;
         height: 5rem;
     }
+
     header .marca {
         position: absolute;
         /border: 1px solid rebeccapurple;
@@ -2922,9 +4468,9 @@ swiper-slide img {
 
 
     }
-    header .marca img {
-    
-    }
+
+    header .marca img {}
+
     .proyecto .priuno .t .td .texts .shor {
         display: none;
 
@@ -2948,5 +4494,26 @@ swiper-slide img {
 
     .proyecto .priuno .t .td .bton a p {
         font-size: 1rem;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+    }
+
+    .portafo .fi .cuadra .fichas {
+        /border: 2px solid red;
+    }
+    .portafo .fi .cuadra .fichas .flo i {
+        font-size: 3rem;
+    }
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1.3rem;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 1.2rem;
     }
 }

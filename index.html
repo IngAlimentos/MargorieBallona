@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <!-- incons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .view-button {
+        background: #fff;
+        border-radius: 4px;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        color: rgba(0, 0, 0, 0.8);
+        display: block;
+        font-family: Futura, Helvetica Neue, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        max-width: 128px;
+        overflow-wrap: break-word;
+        padding: 0.5em 1em;
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        transform: translate3d(-50%, -50%, 0);
+    }
+</style>
+
+<body>
+    <div class="fondo">
+        <img src="images/pri.webp" alt="">
+    </div>
+    <header>
+        <div class="marca">
+
+            <img src="images/logo3.jpg" alt="">
+
+        </div>
+        <div class="equis">
+            <i class="bi bi-list" id="equi"></i>
+            <i class="bi bi-x-lg" id="x"></i>
+        </div>
+        <nav id="enlaces" style="z-index: 5;">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#his">Historia</a></li>
+                <li><a href="#porta">Portafolio</a></li>
+                <li><a href="#refe">Referencias</a></li>
+
+            </ul>
+        </nav>
+        <nav id="enls">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#his">Historia</a></li>
+                <li><a href="#porta">Portafolio</a></li>
+                <li><a href="#refe">Referencias</a></li>
+                <li><a href="#contac">Contáctame</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="desc" id="home" transition-style="in:square:center">
+            <div class="container-fluid uno">
+                <div class="row">
+                    <div class="col-sm-6  es u">
+                        <div class="text">
+                            <p>
+                                <strong style="font-size: 1rem;">👩‍🔬INGENIERÍA DE INDUSTRIAS ALIMENTARIAS </strong>
+                                <br>
+                                Con habilidades en
+                                optimización de
+                                procesos y gestión eficiente 🌟 , mi enfoque se centra en la eficiencia y la innovación
+                                para
+                                contribuir al éxito empresarial.
+                            </p>
+                            <p id="grande">
+                                Descubre mi dedicación a la excelencia en la ingeniería
+                                Alimentaria 🍏🍲. ¡Explora más!
+                            </p>
+                        </div>
+                        <a href="#his">
+                            <div class="bots">
+                                <p>Ver</p>
+                            </div>
+                        </a>
+                        <div class="tresd">
+                            <model-viewer src="images/3d.glb" ar ar-modes="webxr scene-viewer quick-look"
+                                camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1"
+                                exposure="1.22" auto-rotate>
+                                <button class="Hotspot" slot="hotspot-1"
+                                    data-position="-26.500340242160927m -3.9960499999999985m 21.519010462194817m"
+                                    data-normal="0m 1m 0m" data-orbit="-117.1deg 83.6deg 133.1m"
+                                    data-target="1m -1.776e-15m 0m">
+                                    <div class="HotspotAnnotation">Examenes de ETAS</div>
+                                </button>
+                                <button class="Hotspot" slot="hotspot-2"
+                                    data-position="11.343932050427934m 1.4977565570067943m 27.99227197816265m"
+                                    data-normal="0.8658864807152508m 0m 0.5002405446528277m"
+                                    data-visibility-attribute="visible">
+                                    <div class="HotspotAnnotation">Manipulador de Alimentos</div>
+                                </button>
+                                <button class="Hotspot" slot="hotspot-3"
+                                    data-position="31.208981534842568m 3.754050000000003m 16.340798365081106m"
+                                    data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                    <div class="HotspotAnnotation">Control de Plagas</div>
+                                </button>
+                                <button class="Hotspot" slot="hotspot-4"
+                                    data-position="2.1781858849230016m -2.3868869029793234m 1.299537106303847m"
+                                    data-normal="0.43297041959324545m 0.499954427667216m -0.7500547886742646m"
+                                    data-visibility-attribute="visible">
+                                    <div class="HotspotAnnotation">Analisis de Laboratorio</div>
+                                </button>
+                                <button class="Hotspot" slot="hotspot-5"
+                                    data-position="-13.980498266049082m 19.00045m -8.817302523158222m"
+                                    data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                    <div class="HotspotAnnotation">Mantenimiento y Calibracion de Equipos</div>
+                                </button>
+                                <button class="Hotspot" slot="hotspot-6"
+                                    data-position="-33.376902178504665m 1.2538500000000035m -19.814987234134115m"
+                                    data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                    <div class="HotspotAnnotation">Asesoria Personalizada</div>
+                                </button>
+                                <div class="progress-bar hide" slot="progress-bar">
+                                    <div class="update-bar"></div>
+                                </div>
+
+
+                            </model-viewer>
+
+
+                        </div>
+                        <div class="qr">
+                            <img src="images/qr.png" alt="">
+
+
+                        </div>
+                        <div class="hilo">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 es d">
+                        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                            slides-per-view="3" centered-slides="true" space-between="20" grab-cursor="true">
+                            <swiper-slide id="enrutresd">
+                                <p>3D</p>
+                                <model-viewer src="images/3d.glb" ar ar-modes="webxr scene-viewer quick-look"
+                                    camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1"
+                                    exposure="1.22" auto-rotate>
+                                    <button class="Hotspot" slot="hotspot-1"
+                                        data-position="-26.500340242160927m -3.9960499999999985m 21.519010462194817m"
+                                        data-normal="0m 1m 0m" data-orbit="-117.1deg 83.6deg 133.1m"
+                                        data-target="1m -1.776e-15m 0m">
+                                        <div class="HotspotAnnotation">Examenes de ETAS</div>
+                                    </button>
+                                    <button class="Hotspot" slot="hotspot-2"
+                                        data-position="11.343932050427934m 1.4977565570067943m 27.99227197816265m"
+                                        data-normal="0.8658864807152508m 0m 0.5002405446528277m"
+                                        data-visibility-attribute="visible">
+                                        <div class="HotspotAnnotation">Manipulador de Alimentos</div>
+                                    </button>
+                                    <button class="Hotspot" slot="hotspot-3"
+                                        data-position="31.208981534842568m 3.754050000000003m 16.340798365081106m"
+                                        data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                        <div class="HotspotAnnotation">Control de Plagas</div>
+                                    </button>
+                                    <button class="Hotspot" slot="hotspot-4"
+                                        data-position="2.1781858849230016m -2.3868869029793234m 1.299537106303847m"
+                                        data-normal="0.43297041959324545m 0.499954427667216m -0.7500547886742646m"
+                                        data-visibility-attribute="visible">
+                                        <div class="HotspotAnnotation">Analisis de Laboratorio</div>
+                                    </button>
+                                    <button class="Hotspot" slot="hotspot-5"
+                                        data-position="-13.980498266049082m 19.00045m -8.817302523158222m"
+                                        data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                        <div class="HotspotAnnotation">Mantenimiento y Calibracion de Equipos</div>
+                                    </button>
+                                    <button class="Hotspot" slot="hotspot-6"
+                                        data-position="-33.376902178504665m 1.2538500000000035m -19.814987234134115m"
+                                        data-normal="0m 1m 0m" data-visibility-attribute="visible">
+                                        <div class="HotspotAnnotation">Asesoria Personalizada</div>
+                                    </button>
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+
+                                </model-viewer>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <p>REGULACIONES</p>
+                                <img src="images/uno/1.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <p>CONTROL Y CALIDAD</p>
+                                <img src="images/uno/2.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <p>INVESTIGACIÓN </p>
+                                <img src="images/uno/3.jpg" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <p>INNOVACIÓN</p>
+                                <img src="images/uno/4.jpg" alt="">
+                            </swiper-slide>
+
+
+                        </swiper-container>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid dos">
+                <div class="row">
+                    <div class="col redes">
+                        <ul>
+                            <li><a href="https://wa.link/s6yt30" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/mballona.info/" target="_blank"><i
+                                        class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/margorie-ballona-4363641a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                        <div class="abajo">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="abajos">
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </section>
+        <section class="proyecto" id="his">
+            <div class="row priuno">
+                <div class="row r">
+                    <h2><strong style="color: #9DC234;">Ingeniera</strong> en <strong style="color: #F15A24;">
+                            Industrias </strong>Alimentarias</h2>
+                    <p style="color: #F15A24">Lima</p>
+                </div>
+                <div class="row t">
+                    <div class="col tu">
+                        <div class="img">
+                            <img src="images/perfil.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col td">
+                        <div class="texts">
+                            <p class="shor">
+                                <strong>Margorie Ballona Monja</strong> , Ingeniera en Industrias Alimentarias con experiencia en
+                                Calidad, Producción y trámites regulatorios DIGESA. Profesional dinámica, asertiva y
+                                orientada a resultados, comprometida en brindar soluciones que impulsen el éxito de los
+                                productos en el mercado.
+                            </p>
+
+                            <p  class="more">
+                                Soy <strong>Margorie Ballona Monja</strong> , Ingeniera en Industrias Alimentarias con sólida experiencia
+                                en Calidad y Producción, así como en la gestión de trámites regulatorios ante DIGESA,
+                                incluyendo Registro Sanitario, Tablas Nutricionales y Advertencias Publicitarias.
+                                Me caracterizo por una personalidad asertiva y dinámica, con enfoque en la eficiencia,
+                                el cumplimiento normativo y la orientación a resultados. Mi compromiso es brindar
+                                soluciones integrales y confiables que permitan a las empresas del sector alimentario
+                                alcanzar sus objetivos y garantizar el éxito de sus productos en el mercado.
+                            </p>
+                        </div>
+                        <div class="bton">
+                            <a href="https://linktr.ee/ing.margorie" target="_blank" style="text-decoration: none;">
+                                <p style="color: #9DC234;">Tarjeta Digital</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pridos">
+                <div class="ti">
+                    <h3 style="color: #F15A24;"><strong style="color: #9DC234;">Linea </strong>Profesional</h3>
+                </div>
+                <div class="row conx">
+                    <div class="col">
+                        <div class="c1">
+                            <p class="uniz">Universidad Nacional Federico Villareal</p>
+                            <p>Cuento con estudios en la carrera de Ingeniería en Industrias Alimentarias en la Facultad
+                                de Oceanografía, Pesquería, Ciencias Alimentarias y Acuicultura (FOPCA) proyectándome a
+                                ser la mejor profesional.</p>
+
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <img src="images/univ.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <img src="images/tecnologia.jpeg" alt="">
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <p>Certificaciones en Áreas Tecnológicas</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <p>Idiomas: Inglés y Portugués</p>
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <img src="images/portugesyingles.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <img src="images/bpm.jpeg" alt="">
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <p>Certificaciones en BPM,HACCP y BRCGS</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <p>Experiencia en Trámites DIGESA y SENASA</p>
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <img src="images/digesa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <img src="images/normativaorg.png" alt="">
+                        </div>
+                        <div class="raya">
+                            <div class="linea"></div>
+                            <i class="bi bi-record-circle"></i>
+                        </div>
+                        <div class="c2">
+                            <p>Certificaciones Normativa Orgánica</p>
+                            <p>Normativa Peruana , EEUU , Europa y México</p>
+                        </div>
+                    </div>
+                    <div class="col tf">
+
+                        <div class="lt">
+                            <a href="https://drive.google.com/file/d/1zY6YH3-1ks_g-SgS_9rnJ52kJ6Hiu28o/view"
+                                style="color: #F15A24; text-decoration: none  ;" target="_blank">
+                                <div class="btx" id="fts">
+                                    <p>cv</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portafo" id="porta">
+            <div class="row fi">
+                <div class="area">
+                    <h3><strong style="color: #9DC234;">Áreas</strong> de <strong
+                            style="color: #F15A24;">Especialización</strong></h3>
+
+                </div>
+                <div class="cuadra">
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-clipboard-data-fill"></i>
+                        </div>
+                        <div class="title">
+                            <p>Capacitaciones</p>
+                        </div>
+                        <div class="dexz">
+                            <p style="font-size: 0.57rem;">Fortalezca la capacidad, tanto individual como colectiva,
+                                para
+                                el mejor desempeño laboral
+                                y para el logro de los objetivos institucionales.</p>
+                        </div>
+
+                    </div>
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-person-video3"></i>
+                        </div>
+                        <div class="title">
+                            <p>Auditorías</p>
+                        </div>
+                        <div class="dexz">
+                            <p>Permiten verificar el cumplimiento de la empresa respecto a la normativa local y los
+                                requisitos de nuestros clientes</p>
+                        </div>
+                    </div>
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-brush"></i>
+                        </div>
+                        <div class="title">
+                            <p>Diseño de Productos</p>
+                        </div>
+                        <div class="dexz">
+                            <p>A partir de necesidades del cliente y el mercado actual.Cumpliendo con la normativa
+                                vigente</p>
+                        </div>
+                    </div>
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-person-up"></i>
+                        </div>
+                        <div class="title">
+                            <p>Asesoría Personalizada</p>
+                        </div>
+                        <div class="dexz">
+                            <p>En temas de inocuidad para personas naturales, emprendedores y pequeños negocios</p>
+                        </div>
+                    </div>
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <div class="title">
+                            <p>Sistemas de Gestión de Calidad</p>
+                        </div>
+                        <div class="dexz">
+                            <p>Implementación de manuales de BPM , PGH , POES , PH&S , para el cumplimiento y gestión de
+                                la
+                                inocuidad en su empresa</p>
+                        </div>
+                    </div>
+                    <div class="fichas">
+                        <div class="flo">
+                            <i class="bi bi-clipboard2-check"></i>
+                        </div>
+                        <div class="title">
+                            <p>Tràmites VUCE Digesa/Senasa</p>
+                        </div>
+                        <div class="dexz">
+                            <p id="jh">Realice la inscripción, modificación y/o renovación de
+                                registro sanitario de producto
+                                nacional y/o producto extranjero en cumplimiento con la normativa vigente nacional..</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row se">
+                <div class="tis">
+                    <h3><strong style="color: #9DC234;">Marcas</strong> con la que <strong
+                            style="color: #F15A24;">Trabajé</strong></h3>
+                </div>
+                <div class="mar">
+                    <div class="col">
+                        <div class="iamx">
+                            <img src="images/plazavea.jpeg" alt="">
+                        </div>
+                        <div class="leta">
+                            <p>Plaza Vea</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="iamx">
+                            <img src="images/koolchlogo.jpeg" alt="">
+                        </div>
+                        <div class="leta">
+                            <p>Koolch</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="iamx">
+                            <img src="images/katari.png" alt="">
+                        </div>
+                        <div class="leta">
+                            <p>katari</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="elegir">
+                    <h3><strong style="color: #9DC234;">Por qué</strong> <strong
+                            style="color: #F15A24;">Elegirnos?</strong></h3>
+                </div>
+                <div class="rect">
+                    <div class="col">
+                        <div class="logx">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <div class="texto">
+                            <p>Personal Altamente Calificado</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="logx">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <div class="texto">
+                            <p>Asesoría Personalizada</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="logx">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <div class="texto">
+                            <p>Contactos Estratégicos para :</p>
+                        </div>
+                    </div>
+                    <div class="conjunto" style="position: relative; left: 3rem; width: 80%;">
+                        <div class="col">
+                            <div class="col">
+                                <div class="logx">
+                                    <i class="bi bi-wrench"></i>
+                                </div>
+                                <div class="texto">
+                                    <p>Mantenimiento y Calibración de Equipos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="logx">
+                                    <i class="bi bi-thermometer-half"></i>
+                                </div>
+                                <div class="texto">
+                                    <p>Análisis de Laboratorio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="logx">
+                                    <i class="bi bi-bug"></i>
+                                </div>
+                                <div class="texto">
+                                    <p>Control de plagas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="logx">
+                                    <i class="bi bi-clipboard2-data"></i>
+                                </div>
+                                <div class="texto" style="width: 75%;">
+                                    <p>Exámenes de ETAS para personal operativo y Manipulador de Alimentos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="refe" id="refe">
+            <div class="row firts">
+                <div class="titz">
+                    <h3><strong style="color: #9DC234;">Recomendación</strong> de <strong
+                            style="color: #F15A24;">Profesionales</strong></h3>
+                </div>
+                <div class="iy">
+                    <div class="box">
+                        <div class="cjx">
+                            <div class="foto">
+                                <div class="float">
+                                    <img src="images/persona.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="reco">
+                                <div class="a s">
+                                    <p>Mr. Rodrigo Polar</p>
+                                </div>
+                                <div class="b s">
+                                    <p>CEO de McDonls</p>
+                                </div>
+                                <div class="c s">
+                                    <p>El desempeño de la ingeniera marogry en la temporada 2022 y 2023 . ha sido
+                                        excelente
+                                        , destacando valores tanto profesionales como personales</p>
+                                </div>
+                                <div class="d s">
+                                    <p>Puntos Fuertes</p>
+                                </div>
+                                <div class="e s">
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-suit-heart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Pasion en el trabajo</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-gem"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Resolver Problemas</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-bar-chart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Eficiencia</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-graph-up-arrow"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Productividad</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="cjx">
+                            <div class="foto">
+                                <div class="float">
+                                    <img src="images/persona2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="reco">
+                                <div class="a s">
+                                    <p>Mrs. Rosa Delgado</p>
+                                </div>
+                                <div class="b s">
+                                    <p>CEO de Rolfo</p>
+                                </div>
+                                <div class="c s">
+                                    <p>La ingeniera Margorie ha tenido un desempeño sobresaliente en las temporadas 2020
+                                        y 2021, destacándose tanto en el ámbito profesional como personal. </p>
+                                </div>
+                                <div class="d s">
+                                    <p>Puntos Fuertes</p>
+                                </div>
+                                <div class="e s">
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-suit-heart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Pasion en el trabajo</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-gem"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Resolver Problemas</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-bar-chart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Eficiencia</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-graph-up-arrow"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Productividad</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="cjx">
+                            <div class="foto">
+                                <div class="float">
+                                    <img src="images/persona3.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="reco">
+                                <div class="a s">
+                                    <p>Mrs. Mia Juarez</p>
+                                </div>
+                                <div class="b s">
+                                    <p>CEO de kaprika</p>
+                                </div>
+                                <div class="c s">
+                                    <p>La ingeniera Margorie brilló ,su maestría técnica,
+                                        dedicación ejemplar y influencia positiva la posicionan como una figura
+                                        destacada en ambas esferas.</p>
+                                </div>
+                                <div class="d s">
+                                    <p>Puntos Fuertes</p>
+                                </div>
+                                <div class="e s">
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-suit-heart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Pasion en el trabajo</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-gem"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Resolver Problemas</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-bar-chart"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Eficiencia</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cajis">
+                                        <div class="co">
+                                            <i class="bi bi-graph-up-arrow"></i>
+                                        </div>
+                                        <div class="lip">
+                                            <div class="ty">
+                                                <p>Productividad</p>
+                                            </div>
+                                            <div class="line">
+                                                <div class="blanca">
+                                                    <div class="relleno">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row secund" id="contac">
+                <div class="contr">
+                    <div class="logis">
+                        <div class="cuax">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="barra">
+                        <div class="lista">
+                            <div class="men">
+                                <div class="ic">
+                                    <a href="#home"><i class="bi bi-house"></i></a>
+                                </div>
+                                <div class="let">
+                                    <p><a href="#home">Home</a></p>
+                                </div>
+                            </div>
+                            <div class="men">
+                                <div class="ic">
+                                    <a href="#his"><i class="bi bi-mortarboard"></i></a>
+                                </div>
+                                <div class="let">
+                                    <p><a href="#his">Historia</a></p>
+                                </div>
+                            </div>
+                            <div class="men">
+                                <div class="ic">
+                                    <a href="#porta"><i class="bi bi-motherboard"></i></a>
+                                </div>
+                                <div class="let">
+                                    <p><a href="#porta">Portafolio</a></p>
+                                </div>
+                            </div>
+                            <div class="men">
+                                <div class="ic">
+                                    <a href="#refe"><i class="bi bi-person-video2"></i></a>
+                                </div>
+                                <div class="let">
+                                    <p><a href="#refe">Referencias</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contax">
+                        <div class="conk">
+                            <div class="col f">
+                                <p>Contáctame</p>
+                            </div>
+                            <div class="col g">
+                                <div class="io">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="nus">
+                                    <p>+51 926254094</p>
+                                </div>
+                            </div>
+
+                            <div class="col g">
+                                <div class="io">
+                                    <i class="bi bi-envelope-at"></i>
+                                </div>
+                                <div class="nus">
+                                    <p>mballona.info@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="des">
+                                <p>Descargar</p>
+                            </div>
+                            <div class="cbt">
+                                <div class="botm">
+                                    <a href="https://linktr.ee/ing.margorie" target="_blank"
+                                        style="text-decoration: none; color: white;">
+                                        <p>Tarjeta Digital</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            /*menu*/
+            const mostrarmenu = document.getElementById("equi");
+            const enlaces = document.getElementById("enlaces");
+            const x = document.getElementById("x");
+            //funcion mostrar
+            mostrarmenu.addEventListener("click", function abrir() {
+                // Verifica si el menú está visible y cambia su estado
+                enlaces.style.display = (enlaces.style.display === "block") ? "none" : "block";
+                x.style.display = "block";
+                mostrarmenu.style.display = "none";
+            });
+            //cerrar menu
+            x.addEventListener("click", function () {
+                enlaces.style.display = "none";
+                x.style.display = "none";
+                mostrarmenu.style.display = "block";
+            })
+        });
+    </script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="java.js"></script>
+    <script type="module">
+        const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+        const annotationClicked = (annotation) => {
+            let dataset = annotation.dataset;
+            modelViewer2.cameraTarget = dataset.target;
+            modelViewer2.cameraOrbit = dataset.orbit;
+            modelViewer2.fieldOfView = '45deg';
+        }
+
+        modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+            hotspot.addEventListener('click', () => annotationClicked(hotspot));
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("La página ha sido completamente cargada.");
+
+            // Accede a todos los elementos de la página
+            var todosLosElementos = document.querySelectorAll("fondo");
+
+            // Imprime la cantidad de elementos en la consola
+            console.log("Número total de elementos en la página: " + todosLosElementos.length);
+
+            // Puedes realizar acciones con cada elemento si es necesario
+            todosLosElementos.forEach(function (elemento) {
+                // Haz algo con cada elemento, por ejemplo, imprímelo en la consola
+                console.log(elemento);
+            });
+        });
+    </script>
+</body>
+
+</html>

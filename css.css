@@ -1,0 +1,2952 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    background-color: #000000 !important;
+}
+
+/* Estilos para scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animaciones para elementos en scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efectos para elementos interactivos */
+.fichas, .box, .cajis {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fichas:hover, .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cajis:hover {
+    transform: scale(1.05);
+}
+
+/* Animación para iconos */
+.flo i, .logx i {
+    transition: transform 0.3s ease;
+}
+
+.flo:hover i, .logx:hover i {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* Efecto para las imágenes */
+.iamx img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.iamx:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    --color-verde: #9DC234;
+    --color-naranja: #F15A24;
+}
+
+
+.fondo {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: contrast(1.2);
+}
+
+.fondo img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+
+}
+
+header {
+    position: relative;
+    top: 0;
+    //border: 1px solid blue;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+.marca {
+    //border: 1px solid black;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marca img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    filter: contrast(1.2);
+}
+
+.equis {
+    //border: 1px solid moccasin;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.equis i {
+    color: var(--color-verde);
+    font-size: 3rem;
+}
+
+#enls {
+    display: none;
+}
+
+#x {
+    display: none;
+}
+
+#enlaces {
+    display: none;
+    //border: 1px solid rgb(123, 255, 0) !important;
+    right: 2%;
+    position: absolute;
+    top: 5rem;
+    font-size: 0.7rem;
+
+}
+
+#enlaces ul {
+    position: relative;
+    list-style: none;
+}
+
+#enlaces ul li {
+    //border: 1px solid green;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    color: white;
+    background: rgba(241, 90, 36, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    filter: drop-shadow(3px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+/*descripcion*/
+.desc {
+    //border: 1px solid rgb(243, 11, 11);
+}
+
+.uno {
+    //border: 2px solid var(--color-naranja);
+
+}
+
+.row {
+    //border: 1px solid red;
+
+}
+
+.row .text {
+    //border: 1px solid black;
+    margin-right: 8rem;
+    padding: 10px;
+    text-align: justify;
+    z-index: 1;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    filter: drop-shadow(3px 2px 5px rgb(1 1 1 / 5));
+
+}
+
+
+
+
+.row .text p {
+    filter: drop-shadow(3px 2px 5px rgb(1 1 1 / 5));
+    font-size: 0.7rem;
+}
+
+.es {
+    //border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.row .u {
+    height: 15rem;
+}
+
+.row .d {
+    height: 25rem;
+}
+
+/*swiper*/
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+    //border: 1px solid magenta;
+}
+
+#enrutresd {
+    width: 35% !important;
+    border: none;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem !important;
+    height: 80%;
+    width: 31% !important;
+    display: flex;
+    flex-direction: column;
+    //border: 1px solid rgb(164, 240, 12);
+}
+
+
+swiper-slide p {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.55);
+    border-radius: 8px;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    filter: drop-shadow(3px 3px 5px rgb(1 1 1 / 8));
+
+}
+
+swiper-slide img {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px !important;
+}
+
+.dos .redes {
+    //border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.dos .redes ul {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid red;
+    margin-bottom: 0;
+}
+
+.dos .redes ul li {
+    list-style: none;
+    margin: 1rem;
+    background-color: #fff;
+    //border: 1px solid red;
+    border-radius: 52%;
+    width: 2rem;
+    text-align: center;
+}
+
+.dos .redes ul li i {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.dos .redes .abajo {
+    //border: 1px solid red;
+}
+
+.dos .redes .abajo i {
+    font-size: 2rem;
+    color: #F15A24;
+}
+
+/***section 2 ***/
+.proyecto {
+    width: 100%;
+    //border: 1px solid blue;
+    padding: 0;
+    z-index: 2;
+}
+
+.proyecto .row {
+    //border: 1px solid blue;
+
+}
+
+.proyecto .priuno {
+    height: 20rem;
+    //border: 1px solid rgb(8, 8, 8);
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+
+}
+
+.proyecto .priuno .row {
+    //border: 2px solid black;
+    margin: 0;
+}
+
+.proyecto .priuno .r {
+    height: 25%;
+    //background-color: #F15A24;
+    z-index: 1;
+    color: white;
+    border: none;
+}
+
+.proyecto .priuno .t {
+    height: 75%;
+    //background-color: #9ff124;
+    padding: 3%;
+    //border-bottom: 3px solid var(--color-verde);
+}
+
+.proyecto .priuno .t .col {
+    //border: 1px solid blue;
+    padding: 2rem;
+    position: relative;
+}
+
+.proyecto .priuno .t .tu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid rgb(246, 17, 17);
+    padding: 0;
+
+}
+
+.proyecto .priuno .t .tu .img {
+    width: 95%;
+    height: 100%;
+    //border: 1px solid white;
+    position: relative;
+}
+
+.proyecto .priuno .t .tu .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.proyecto .priuno .t .td {
+    /border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: rgba(255, 255, 255, 0.093);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.proyecto .priuno .t .td .texts {
+    /border: 1px solid red;
+    width: 100%;
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    color: white;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.more {
+    display: none;
+}
+
+.proyecto .priuno .t .td .bton {
+    /border: 1px solid blue;
+    position: absolute;
+    bottom: 7%;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 5rem;
+    background-color: #F15A24;
+    color: #fff;
+}
+
+.proyecto .priuno .t .td .bton p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/****/
+.proyecto .pridos {
+    height: 33rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    //border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    //background-color: #f124f1;
+}
+
+.proyecto .pridos .ti {
+    text-align: center;
+    height: 5%;
+    z-index: 1;
+    color: white;
+}
+
+.proyecto .pridos div {
+    //border: 1px solid black;
+}
+
+.proyecto .pridos .conx {
+    height: 95%;
+    margin: 0;
+    padding: 0;
+    //border: 1px solid #9DC234;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto .pridos .conx .col {
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    color: white;
+}
+
+.proyecto .pridos .conx .col .c1 {
+    width: 45%;
+    //border: 1px solid #ededf1;
+    height: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+
+
+.proyecto .pridos .conx .col .c1 p {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    //border: 1px solid red;
+    margin: 0;
+    text-align: justify;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+
+}
+
+.proyecto .pridos .conx .col .c1 .uniz {
+    font-size: 0.6rem;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.proyecto .pridos .conx .col .raya {
+
+    width: 10%;
+    //border: 1px solid #0aefe4;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proyecto .pridos .conx .col .raya .linea {
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    border: 1px solid #ededf1;
+
+
+}
+
+.proyecto .pridos .conx .col .raya i {
+    z-index: 1;
+    background: none;
+    color: #fff;
+}
+
+.proyecto .pridos .conx .col .c2 {
+    width: 45%;
+    //border: 1px solid #eee306;
+    height: 100%;
+    right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.proyecto .pridos .conx .col .c2 img {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.proyecto .pridos .conx .col .c2 p {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    //border: 1px solid red;
+    margin: 0;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.proyecto .pridos .conx .col .c1 {
+    width: 45%;
+    //border: 1px solid #eee306;
+    height: 100%;
+    right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.proyecto .pridos .conx .col .c1 img {
+    //border: 1px solid green;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.proyecto .pridos .conx .col .c1 p {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    //border: 1px solid red;
+    margin: 0;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px rgb(1 1 1 / 5));
+}
+
+.proyecto .pridos .conx .tf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto .pridos .conx .tf .lt {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto .pridos .conx .tf .lt a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto .pridos .conx .btx {
+
+    border: 2px solid var(--color-naranja);
+    position: absolute;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    color: var(--color-naranja);
+}
+
+.proyecto .pridos .conx .btx p {
+    text-align: center;
+}
+
+/**** portafolio ****/
+.portafo {
+    //border: 2px solid green;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.portafo .row {
+    height: 26.5rem;
+    //border: 1px solid black;
+    width: 100%;
+    margin: 0;
+}
+
+.portafo .fi {
+    //border: 2px solid blue;
+    z-index: 1;
+}
+
+.portafo .fi .area {
+    //border: 1px solid black;
+    padding: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+}
+
+.portafo .fi .area p {
+    margin: 0;
+    text-align: center;
+    //border: 1px solid green;
+}
+
+.portafo .fi .cuadra {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 11rem;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+}
+
+.portafo .fi .cuadra .fichas {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /***codigo trasparete***/
+    background: rgba(255, 255, 255, .18);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: white;
+
+}
+
+.portafo .fi .cuadra .fichas .flo {
+    //border: 1px solid black;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafo .fi .cuadra .fichas .flo i {
+    font-size: 2.5rem;
+    //border: 1px solid black;
+}
+
+.portafo .fi .cuadra .fichas .title {
+    //border: 1px solid blue;
+    height: 35%;
+    padding: 0;
+    font-size: 0.8rem;
+    position: relative;
+    color: #9DC234;
+}
+
+.portafo .fi .cuadra .fichas p {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    //border: 1px solid #9DC234;
+
+}
+
+.portafo .fi .cuadra .fichas .dexz {
+    //border: 1px solid green;
+    height: 80%;
+    position: relative;
+
+
+}
+
+.portafo .fi .cuadra .fichas .dexz p {
+    font-size: 0.6rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: justify;
+    //border: 1px solid rgb(14, 6, 251);
+    padding: 0.4rem;
+}
+
+#hy {
+    width: 14.6rem;
+}
+
+.portafo .se {
+    display: flex;
+    flex-direction: column;
+}
+
+.portafo .se .tis {
+    //border: 2px solid rgb(122, 197, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    color: white;
+}
+
+.portafo .se .tis p {
+    margin: 0;
+}
+
+.portafo .se .mar {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid red;
+    z-index: 2;
+}
+
+.portafo .se .mar .col {
+    //border: 1px solid blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0 0.2rem;
+}
+
+.portafo .se .mar .col .iamx {
+    //border: 1px solid green;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.portafo .se .mar .col .iamx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.portafo .se .mar .col .leta {
+    //border: 1px solid mediumorchid;
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+}
+
+.portafo .se .mar .col .leta p {
+    //border: 1px solid black;
+    text-align: center;
+    margin: 0;
+}
+
+.portafo .se .elegir {
+    //border: 1px solid black;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.portafo .se .elegir p {
+    margin: 0;
+}
+
+.portafo .se .rect {
+    height: 55%;
+    //border: 2px solid rgb(27, 162, 0);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+}
+
+.portafo .se .rect .col {
+    //border: 1px solid orangered;
+    display: flex;
+    flex-direction: row;
+}
+
+.portafo .se .rect .col .logx {
+    //border: 1px solid black;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.portafo .se .rect .col .texto {
+    //border: 1px solid black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.portafo .se .rect .col .texto p {
+    margin: 0;
+}
+
+/*** referencias y contacto ***/
+.refe {
+    //border: 2px solid rgb(233, 9, 226);
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.refe .firts {
+    height: 38rem;
+    //border: 3px solid black;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+}
+
+.refe .firts .titz {
+    //border: 1px solid orange;
+    padding: 0;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: white;
+}
+
+.refe .firts .titz .p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.refe .firts .iy {}
+
+.refe .firts .box {
+    //border: 12px solid green;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    color: white;
+    margin: 2px 0;
+
+}
+
+.refe .firts .box .cjx {
+    //border: 4px solid violet;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.refe .firts .box .cjx .foto {
+    //border: 3px solid rgb(101, 104, 7);
+    width: 10%;
+    position: relative;
+}
+
+.refe .firts .box .cjx .foto .float {
+    //border: 3px solid black;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.refe .firts .box .cjx .foto .float img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 6;
+    position: relative;
+}
+
+.refe .firts .box .cjx .reco {
+    //border: 3px solid rgb(101, 104, 7);
+    width: 90%;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 8%;
+    /***fondo***/
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    z-index: 2;
+
+}
+
+.refe .firts .box .cjx .reco .s {
+    padding: 0 0.8rem;
+}
+
+.refe .firts .box .cjx .reco .a {
+    //border: 1px solid magenta;
+    height: 10%;
+    font-size: 0.6rem;
+}
+
+.refe .firts .box .cjx .reco .b {
+    //border: 1px solid rgb(30, 255, 0);
+    height: 8%;
+    font-size: 0.5rem;
+    color: #F15A24;
+}
+
+.refe .firts .box .cjx .reco .c {
+    //border: 1px solid rgb(0, 47, 255);
+    height: 27%;
+    font-size: 0.5rem;
+    text-align: justify;
+}
+
+.refe .firts .box .cjx .reco .d {
+    //border: 1px solid rgb(208, 255, 0);
+    height: 10%;
+    font-size: 0.6rem;
+    color: #9DC234;
+}
+
+.refe .firts .box .cjx .reco .e {
+    //border: 1px solid rgb(255, 98, 0);
+    height: 45%;
+    padding: 0;
+    display: grid;
+    gap: 0.2rem;
+    grid-auto-rows: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+}
+
+.refe .firts .box .cjx .reco .e div {
+    //border: 1px solid black;
+}
+
+.refe .firts .box .cjx .reco .e .cajis {
+    display: flex;
+    flex-direction: row;
+}
+
+.refe .firts .box .cjx .reco .e .cajis .co {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip div {
+    height: 50%;
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip .ty {
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip .line .blanca {
+    width: 90%;
+    border-radius: 0.2rem;
+    background-color: white;
+    height: 0.2rem;
+}
+
+.refe .firts .box .cjx .reco .e .cajis .lip .line .blanca .relleno {
+    width: 90%;
+    border-radius: 0.2rem;
+    height: 100%;
+    background-color: #F15A24;
+}
+
+.refe .secund {
+    height: 15rem;
+    //border: 2px solid rgb(74, 11, 247);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.refe .secund .contr {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+
+    padding: 0;
+    /***fondo***/
+    background: rgba(240, 240, 240, 0.131);
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.25);
+    border-radius: 8px;
+
+}
+
+.refe .secund .logis {
+    height: 20%;
+    //border: 2px solid rgb(74, 11, 247);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.refe .secund .logis .cuax {
+    //border: 1px solid black;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    background-color: white;
+
+}
+
+.refe .secund .logis .cuax img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.2rem;
+    border-radius: 50%;
+}
+
+.refe .secund .barra {
+    height: 40%;
+    //border: 2px solid rgb(74, 11, 247);
+    display: flex;
+    justify-content: center;
+}
+
+.refe .secund .barra .lista {
+    //border: 1px solid red;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 0.2rem;
+    grid-auto-rows: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    border-bottom: 1px solid #9DC234;
+
+}
+
+.refe .secund .barra .lista div {
+    //border: 1px solid green;
+}
+
+.refe .secund .barra .lista .men {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 1rem;
+
+}
+
+.refe .secund .barra .lista .men .ic {
+    //border: 2px solid black;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.refe .secund .barra .lista .men .ic a {
+    color: white;
+}
+
+.refe .secund .barra .lista .men .let {
+    //border: 1px solid black;
+    height: 20%;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.refe .secund .barra .lista .men .let p a {
+    color: white;
+    text-decoration: none;
+}
+
+.refe .secund .contax {
+    height: 40%;
+    //border: 2px solid rgb(74, 11, 247);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.3rem;
+    padding: 0 2rem;
+}
+
+.refe .secund .contax .conk {
+    //border: 1px solid green;
+    width: 50%;
+    color: white;
+
+}
+
+.refe .secund .contax .conk .col {
+    //border: 1px solid black;
+    height: 33.3%;
+    padding: 0 1rem;
+}
+
+.refe .secund .contax .conk .f {
+    font-size: 0.8rem;
+    color: #F15A24;
+    text-align: center;
+}
+
+.refe .secund .contax .conk .g {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    ;
+}
+
+.refe .secund .contax .conk .g .io {
+    //border: 1px solid black;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refe .secund .contax .conk .g .nus {
+    //border: 1px solid black;
+    height: 100%;
+    width: 80%;
+    font-size: 0.7rem;
+}
+
+.refe .secund .contax .desc {
+    //border: 1px solid rgb(14, 77, 235);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #F15A24;
+    font-size: 0.8rem;
+}
+
+.refe .secund .contax .desc div {
+    //border: 1px solid black;
+    height: 33.3%;
+}
+
+.refe .secund .contax .desc .des {
+    text-align: center;
+    //border: 1px solid black;
+    height: 33.3%;
+}
+
+.refe .secund .contax .desc .cbt {
+    text-align: center;
+    //border: 1px solid black;
+    height: 66.7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refe .secund .contax .desc .cbt .botm {
+    width: 6rem;
+    height: 1.4rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: #9DC234;
+    color: #000000;
+    font-weight: bold;
+}
+
+/***elementos añdaidos***/
+.abajos {
+    display: none;
+}
+
+.bots {
+    display: none;
+}
+
+.tresd {
+    //border: 3px solid red;
+    display: none;
+}
+
+.Hotspot {
+    display: block;
+    border: none;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    font-size: .3rem;
+}
+
+.qr {
+    display: none;
+}
+
+.hilo {
+    display: none;
+}
+
+#grande {
+    display: none;
+}
+
+#jh {
+    font-size: 0.5rem;
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+        color: white;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        //border: 1px solid var(--color-naranja);
+        width: 15rem;
+        margin: 0;
+        font-size: .7rem;
+        top: 2rem;
+
+    }
+
+    .uno .row .text p {
+        width: 100%;
+
+    }
+
+    .uno .row .d {}
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid red;
+        height: 95%;
+        padding: 0.2rem;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .dos .redes ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        padding: 0;
+    }
+
+    .dos .redes ul li {
+        list-style: none;
+        margin: 1rem;
+        background-color: #fff;
+        border: 1px solid rgb(252, 252, 252);
+        //border-radius: 52%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .dos .redes .abajo {
+        //border: 1px solid red;
+    }
+
+    .dos .redes .abajo i {
+        font-size: 1.5rem;
+        color: #F15A24;
+    }
+
+    /**poyecto ***/
+    .proyecto .priuno .r h1 {}
+
+    .proyecto .priuno .t .tu .img {
+        //border: 5px solid magenta;
+        width: 10rem;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        //border: 3px solid black;
+        top: 10%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyecto .priuno .t .td .texts p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 20%;
+        width: 6rem;
+        height: 1.3rem;
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: 20rem;
+
+    }
+
+    #hy .title p {}
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 8rem;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        //border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0 .3rem;
+
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+    }
+
+    .portafo .se .rect {
+        //border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contax .desc {
+        font-size: 0.7rem;
+    }
+
+
+    /***elementos añdaidos***/
+    .abajos {
+        display: none;
+    }
+
+    .bots {
+        display: none;
+    }
+
+    .tresd {
+        display: block;
+        //border: 1px solid white;
+        position: absolute;
+        top: 8rem;
+        padding: 0;
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    model-viewer {
+        //border: 1px solid magenta;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hotspot {
+        display: block;
+        border: none;
+        padding: 0rem 1rem;
+        border-radius: 1rem;
+        font-size: .8rem;
+    }
+
+    .qr {
+        display: none;
+    }
+
+    .hilo {
+        display: none;
+    }
+
+    #grande {
+        display: none;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+        color: white;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        //border: 1px solid var(--color-naranja);
+        width: 15rem;
+        margin: 0;
+        font-size: .7rem;
+        top: 2rem;
+
+    }
+
+    .uno .row .text p {
+        width: 100%;
+
+    }
+
+    .uno .row .d {}
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid red;
+        height: 95%;
+        padding: 0.2rem;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .dos .redes ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        padding: 0;
+    }
+
+    .dos .redes ul li {
+        list-style: none;
+        margin: 1rem;
+        background-color: #fff;
+        border: 1px solid rgb(252, 252, 252);
+        //border-radius: 52%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .dos .redes .abajo {
+        //border: 1px solid red;
+    }
+
+    .dos .redes .abajo i {
+        font-size: 1.5rem;
+        color: #F15A24;
+    }
+
+    /**poyecto ***/
+    .proyecto .priuno .r h1 {}
+
+    .proyecto .priuno .t .tu .img {
+        //border: 5px solid magenta;
+        width: 10rem;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        //border: 3px solid black;
+        top: 10%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyecto .priuno .t .td .texts p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .priuno .t .td .texts .shor {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: none;
+
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 20%;
+        width: 6rem;
+        height: 1.3rem;
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: auto;
+
+    }
+
+    #hy .flo i {
+        position: absolute;
+        top: -2.3rem;
+    }
+
+    #hy .title p {
+        font-size: 0.7rem;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 8rem;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        //border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0 .3rem;
+
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+    }
+
+    .portafo .se .rect {
+        //border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contax .desc {
+        font-size: 0.7rem;
+    }
+
+
+    /***elementos añdaidos***/
+    .abajos {
+        display: none;
+    }
+
+    .bots {
+        display: none;
+    }
+
+    .tresd {
+        display: block;
+        //border: 1px solid white;
+        position: absolute;
+        top: 8rem;
+        padding: 0;
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    model-viewer {
+        //border: 1px solid magenta;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hotspot {
+        display: block;
+        border: none;
+        padding: 0rem 1rem;
+        border-radius: 1rem;
+        font-size: .8rem;
+    }
+
+    .qr {
+        display: none;
+    }
+
+    .hilo {
+        display: none;
+    }
+
+    #grande {
+        display: none;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+}
+
+/* Escritorio grande */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+        color: white;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        //border: 1px solid var(--color-naranja);
+        width: 15rem;
+        margin: 0;
+        font-size: .7rem;
+        top: 2rem;
+
+    }
+
+    .uno .row .text p {
+        width: 100%;
+
+    }
+
+    .uno .row .d {}
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid red;
+        height: 95%;
+        padding: 0.2rem;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .dos .redes ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        padding: 0;
+    }
+
+    .dos .redes ul li {
+        list-style: none;
+        margin: 1rem;
+        background-color: #fff;
+        border: 1px solid rgb(252, 252, 252);
+        //border-radius: 52%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .dos .redes .abajo {
+        //border: 1px solid red;
+    }
+
+    .dos .redes .abajo i {
+        font-size: 1.5rem;
+        color: #F15A24;
+    }
+
+    /**poyecto ***/
+    .proyecto .priuno .r h1 {}
+
+    .proyecto .priuno .t .tu .img {
+        //border: 5px solid magenta;
+        width: 10rem;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        //border: 3px solid black;
+        top: 10%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyecto .priuno .t .td .texts .shor {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: none;
+
+    }
+
+    .proyecto .priuno .t .td .texts p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 20%;
+        width: 6rem;
+        height: 1.3rem;
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: auto;
+
+    }
+
+    #hy .flo i {
+        position: absolute;
+        top: -2.3rem;
+    }
+
+    #hy .title p {
+        font-size: 0.7rem;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 8rem;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        //border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0 .3rem;
+
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+    }
+
+    .portafo .se .rect {
+        //border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contax .desc {
+        font-size: 0.7rem;
+    }
+
+
+    /***elementos añdaidos***/
+    .abajos {
+        display: none;
+    }
+
+    .bots {
+        display: none;
+    }
+
+    .tresd {
+        display: block;
+        //border: 1px solid white;
+        position: absolute;
+        top: 8rem;
+        padding: 0;
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    model-viewer {
+        //border: 1px solid magenta;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hotspot {
+        display: block;
+        border: none;
+        padding: 0rem 1rem;
+        border-radius: 1rem;
+        font-size: .8rem;
+    }
+
+    .qr {
+        display: none;
+    }
+
+    .hilo {
+        display: none;
+    }
+
+    #jh {
+        font-size: 0.7rem;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+}
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        //border: 1px solid magenta;
+        margin: 0;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .marca {
+        position: absolute;
+        //border: 1px solid rebeccapurple;
+        left: 0;
+        width: 6rem;
+
+    }
+
+    header .equis {
+        display: none;
+    }
+
+    #enls {
+        display: block;
+    }
+
+    #enls ul {
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+
+
+
+
+    }
+
+    #enls ul li {
+        font-size: 0.75rem;
+        padding: 0.2rem;
+        margin: 0 2rem;
+
+    }
+
+    #enls ul li:hover {
+        border-bottom: 1px solid #9DC234;
+        color: #F15A24;
+    }
+
+
+    .desc {
+        display: flex;
+        flex-direction: row;
+        height: 35rem;
+    }
+
+    .desc .uno {
+        width: 95%;
+        //border: 3px solid green;
+    }
+
+
+    .uno .row {
+        //border: 1px solid red  ;
+    }
+
+    .uno .row .u {
+        //border: 1px solid #0aefe4;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+    }
+
+    .uno .row .text {
+        position: absolute;
+        /border: 1px solid var(--color-naranja);
+        width: 40rem;
+        margin: 1rem;
+        font-size: 1rem;
+        top: 2rem;
+        padding: 1rem;
+
+    }
+
+    .uno .row .bots {
+        transition: all 0.5s ease-out;
+        transform: translateY(10px);
+    }
+
+    .uno .row .bots:hover {
+        background-color: #f15b2400;
+        color: #F15A24;
+        border: 1px solid #F15A24;
+    }
+
+    .uno .row .text p {
+        width: 100%;
+        font-size: 0.8rem;
+        filter: drop-shadow(2px 2px 5px var(--color-naranja));
+
+    }
+
+    .uno .row .bots {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        width: 5rem;
+        height: 1.2rem;
+        background-color: #F15A24;
+        color: white;
+        border-radius: 3rem;
+        font-size: 0.8rem;
+        text-align: center;
+        top: 13rem;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd {
+        display: block;
+        width: 35rem;
+        height: 25rem;
+        /border: 1px solid magenta;
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .tresd model-viewer {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        //border: 1px solid green;
+    }
+
+    .uno .row .tresd model-viewer button {
+        font-size: 0.6rem;
+        border-radius: 2rem;
+        border: 1px solid white;
+        padding: 0 0.5rem;
+    }
+
+    .uno .row .qr {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        //border: 3px solid rgb(0, 255, 238);
+        position: absolute;
+        top: 27rem;
+        left: 1rem;
+        padding: 0;
+    }
+
+    .uno .row .qr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .uno .row .hilo {
+        display: block;
+        width: 30rem;
+        height: 0.1px;
+        border: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 35rem;
+        left: 10rem;
+
+    }
+
+    .uno .row .d {
+        //border: 1px solid red;
+        z-index: 1;
+        padding: 0;
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .uno .row .d .mySwiper {
+        //border: 1px solid rgb(26, 255, 0);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uno .row .d .mySwiper swiper-slide {
+        //border: 1px solid blue;
+        width: 10rem !important;
+
+
+
+    }
+
+    /*swiper*/
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem !important;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        width: 7rem !important;
+    }
+
+    swiper-slide p {
+        color: var(--color-naranja);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        filter: drop-shadow(3px 2px 5px rgb(1 1 1 / 8));
+
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
+
+    .uno .row .d p {
+        font-size: .7rem;
+    }
+
+    /*****desc****/
+    .desc {
+        height: 40rem;
+    }
+
+    .desc .dos {
+        width: 5%;
+        //border: 3px solid red;
+    }
+
+    .desc .dos .redes ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dos .redes {
+        //border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+
+    }
+
+    .dos .redes ul {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //border: 1px solid rgb(255, 0, 234);
+        width: 0rem;
+        padding: 0;
+        bottom: -14rem;
+        margin: 0;
+    }
+
+    .dos .redes ul li {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .dos .redes ul li i:hover {
+        color: #9DC234;
+    }
+
+    .dos .redes ul li i {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        background-color: none;
+        border: none;
+    }
+
+    .abajo {
+        //border: 1px solid rgb(255, 255, 255) !important;
+        background-color: #ededf1;
+        position: relative;
+        width: 0.1px;
+        height: 20rem;
+        margin: 0;
+        bottom: -3rem;
+    }
+
+    .abajo i {
+        display: none;
+    }
+
+    .abajos {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        height: 4rem;
+        font-size: 1.8rem;
+        color: #F15A24;
+        font-weight: bold;
+        z-index: 5 !important;
+    }
+
+    .abajos i {
+        z-index: 5 !important;
+    }
+
+
+    /**poyecto ***/
+    .proyecto {
+        /border: 2px solid red;
+    }
+
+    .proyecto .priuno {
+        /border: 2px solid blue;
+        height: 100%;
+    }
+
+    .proyecto .priuno .r {
+        /border: 2px solid yellow;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyecto .priuno div {
+        /border: 2px solid orange;
+        z-index: 2;
+    }
+
+    .proyecto .pridos {
+        /border: 2px solid green;
+        z-index: 2;
+    }
+
+    .proyecto .priuno .t {
+        /border: 3px solid purple;
+    }
+
+    .proyecto .priuno .t .tu .img {
+        /border: 5px solid magenta;
+        width: 90%;
+        height: 100%;
+    }
+
+    .proyecto .priuno .t .td .texts {
+        /border: 3px solid black;
+        top: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+
+    .proyecto .priuno .t .td .texts .shor {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: none;
+        font-size: 0.9rem;
+        /border: 2px solid red;
+        width: 100%;
+
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 10%;
+        width: 8rem;
+        height: 1.6rem;
+        font-size: 1rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton a p {
+        font-size: 1rem;
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #F15A24;
+
+    }
+
+    .proyecto .priuno .t .td .bton p {
+        font-size: 0.7rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton:hover {
+        color: white;
+        background-color: #9cc23406;
+        border: 1px solid #9DC234;
+    }
+
+
+
+    .proyecto .pridos .conx .col .c2 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c2 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 p {
+        font-size: 0.7rem;
+    }
+
+    .proyecto .pridos .conx .col .c1 img {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    #hy {
+        width: auto;
+
+    }
+
+    #hy .title p {}
+
+    .portafo .fi .area {
+        font-size: 0.7rem;
+        //border: 1px solid blue;
+    }
+
+    .portafo .fi .cuadra {
+        display: grid;
+        gap: 2rem;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+        //border: 1px solid green;
+        padding-left: 7rem;
+
+    }
+
+    .portafo .fi .cuadra .fichas {
+        border-radius: 30px;
+
+
+
+    }
+
+    .portafo .fi .cuadra .fichas .title {
+        font-size: 1rem;
+        color: #9DC234;
+    }
+
+    .portafo .fi .cuadra .fichas .dexz p {
+        font-size: 0.7rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .portafo .se {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafo .se .mar {
+        //border: 5px solid rgb(245, 205, 5);
+        width: 30rem;
+    }
+
+    .portafo .se .mar .col {
+        margin: 0 .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .portafo .se .mar .col .iamx {
+        //border: 5px solid mediumspringgreen;
+        width: 100%;
+        height: 80%;
+    }
+
+    .portafo .se .mar .col .leta {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .portafo .se .rect {
+        //border: 1px solid green;
+        width: 30rem;
+
+    }
+
+    .portafo .se .rect .col .texto {
+        //font-size: 0.8rem;
+    }
+
+
+    #fts:hover {
+        background-color: #F15A24;
+        color: white;
+
+    }
+
+    #fts:hover p a {
+        color: white !important;
+    }
+
+    .refe {
+        z-index: 2 !important;
+
+    }
+
+    .refe .firts {
+        //border: 1px solid gold !important;
+        display: block;
+    }
+
+    .refe .firts .titz {
+        //border: 1px solid magenta;
+        margin: 0;
+    }
+
+    .refe .firts .iy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        //border: 5px solid rgb(0, 4, 255);
+        z-index: 2;
+        margin: 0;
+        height: 80%;
+    }
+
+    .refe .firts .box {
+        border: 1px solid rgba(108, 240, 7, 0);
+        width: auto;
+        height: 100%;
+    }
+
+    .refe .firts .box .cjx .reco .s p {
+        font-size: 0.8rem;
+    }
+
+    .refe .firts .box .cjx .reco .s {
+        //border: 1px solid blue;
+    }
+
+    .refe .firts .box .cjx .reco .a {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .refe .firts .box .cjx .reco .a p {
+        //border: 1px solid yellow;
+        margin: 0;
+    }
+
+    .refe .firts .box .cjx .reco .b p {
+        font-size: 0.7rem;
+    }
+
+    .refe .firts .box .cjx .reco .e {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .refe .secund .barra .lista {
+        display: flex;
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax {
+        //  border: 5px solid honeydew;
+    }
+
+    .refe .secund .contax .conk {
+        font-size: 0.7rem;
+
+    }
+
+    .refe .secund .contax .desc {
+        //border: 5px solid red;
+        height: 100%;
+    }
+
+    .refe .secund .contr .barra .lista .men {
+        margin: 0 1rem;
+    }
+
+    .refe .secund .contr .barra .lista .men .ic a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .refe .secund .contr .barra p a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    .refe .secund .contr .barra p a:hover {
+        color: #9DC234;
+    }
+
+    /***proyecto***/
+    .proyecto {
+        display: flex;
+        flex-direction: row;
+        height: 40rem;
+    }
+
+    .proyecto .priuno {
+        padding: 0 2rem;
+    }
+
+    .proyecto .priuno .r h1 {
+        font-size: 1.7rem;
+    }
+
+    .proyecto .pridos {
+        height: 100%;
+    }
+
+    /***portafo***/
+    .portafo {
+        display: flex;
+        flex-direction: row;
+        height: 40rem;
+    }
+
+    #jh {
+        font-size: 0.7rem;
+    }
+
+    .portafo .fi {
+        height: 100%;
+    }
+
+    .portafo .se {
+        height: 100%;
+    }
+
+    #grande {
+        display: block;
+    }
+
+    /**** footer ***/
+    .refe .secund .contax {
+        //border: 1px solid blue;
+        padding: 0 10rem;
+    }
+
+    .refe .secund .contax div {
+        //border: 1px solid black;
+
+    }
+
+    .refe .secund .contax .conk .f {
+        text-align: center;
+    }
+
+    #enrutresd {
+        display: none;
+    }
+
+    /*****scrooll***/
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    header{
+        /border: 2px solid red;
+        height: 5rem;
+    }
+    header .marca {
+        position: absolute;
+        /border: 1px solid rebeccapurple;
+        left: 0;
+
+
+    }
+    header .marca img {
+    
+    }
+    .proyecto .priuno .t .td .texts .shor {
+        display: none;
+
+    }
+
+    .proyecto .priuno .t .td .texts .more {
+        display: block;
+        font-size: 0.9rem;
+        /border: 2px solid red;
+        width: 100%;
+
+    }
+
+    .proyecto .priuno .t .td .bton {
+        bottom: 10%;
+        width: 8rem;
+        height: 1.6rem;
+        font-size: 1rem;
+
+    }
+
+    .proyecto .priuno .t .td .bton a p {
+        font-size: 1rem;
+    }
+}
